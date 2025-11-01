@@ -1,3 +1,7 @@
+/* =========================================================
+   ====== STYLE UTAMA (ZAHABI KHALAF PORTOFOLIO) ======
+   ========================================================= */
+
 /* ===== Umum ===== */
 body {
   background-color: #b4cdff;
@@ -11,7 +15,7 @@ body {
   padding: 20px;
 }
 
-/* Header */
+/* ===== Header ===== */
 .header {
   background-color: #012a7d;
   color: white;
@@ -20,39 +24,57 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Bagian Umum */
-.about, .projects, .contact, .profil, .quote, .projects1, .projects2, .projects3, .projects_ {
-  background: rgb(255, 255, 255);
+/* ===== Bagian Umum ===== */
+.about,
+.projects,
+.contact,
+.profil,
+.quote,
+.projects1,
+.projects2,
+.projects3,
+.projects4,
+.projects_ {
+  background: #fff;
   margin: 20px auto;
   padding: 20px;
   width: 80%;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Judul & Paragraf */
+/* ===== Teks ===== */
 h1 { color: #ffffff; }
 h2 { color: #000000; }
 h3 { color: #ffffff; }
 h4 { color: #000000; }
-p { color: #000000; }
+p  { color: #000000; }
 
-/* List */
-ul { list-style-type: none; padding: 0; }
+/* ===== List ===== */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
 ul li {
   background-color: #eaeaea;
   margin: 8px 0;
   padding: 10px;
   border-radius: 8px;
   transition: 0.3s;
+  cursor: pointer;
 }
+
 ul li:hover {
   background-color: #d0d8ff;
   transform: scale(1.03);
 }
 
-/* Profil */
-.profil { text-align: center; }
+/* ===== Profil ===== */
+.profil {
+  text-align: center;
+}
+
 .foto-profil {
   width: 150px;
   height: 150px;
@@ -60,8 +82,42 @@ ul li:hover {
   object-fit: cover;
   margin: 10px 0 15px 0;
   border: 3px solid #002855;
-} 
+}
 
+/* ===== Tombol Umum ===== */
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #012a7d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #0041c2;
+}
+
+/* ===== Tombol Toggle Mode ===== */
+.toggle-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 28px;
+}
+
+.toggle-btn:hover {
+  background-color: #012a7d;
+  color: white;
+}
+
+/* ===== Menu ===== */
 .menu {
   position: absolute;
   top: 30px;
@@ -72,7 +128,7 @@ ul li:hover {
   z-index: 1001;
 }
 
-/* Sidebar menu */
+/* ===== Sidebar Utama ===== */
 .sidebar {
   position: absolute;
   top: 60px;
@@ -85,66 +141,54 @@ ul li:hover {
   flex-direction: column;
   gap: 10px;
   z-index: 1000;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  color: white;
 }
 
-
-.toggle-btn {
+.sidebar2 {
   position: absolute;
-  top: 10px; /* atur jarak dari atas */
-  right: 10px; /* tetap di kanan */
-  border-radius: 8px;
-  padding: 8px 16px;
-  font-weight: bold;
-  cursor: pointer;
-  font-size: 28px;
-}
-.toggle-btn:hover {
+  top: 60px;
+  left: 15px;
   background-color: #012a7d;
-  color: white;
-}
-button {
-  margin: 10px;
+  border-radius: 10px;
   padding: 10px 20px;
-  background-color: #012a7d;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.3s;
 }
-button:hover { background-color: #0041c2; }
 
-/* ===== JKT48 Container & Foto ===== */
+/* =========================================================
+   ====== BAGIAN JKT48 ======
+   ========================================================= */
 .jkt48-container {
   display: flex;
   align-items: flex-start;
   gap: 20px;
   padding: 20px;
-  border-radius: 0px;
   width: 80%;
   margin: 20px auto;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .jkt48 {
   width: 150px;
   height: 150px;
   object-fit: cover;
-  border-radius: 0;  /* kotak */
+  border-radius: 0;
   border: 3px solid #002855;
-  margin-right: 20px; /* jarak ke teks */
+  margin-right: 20px;
 }
 
-.sidebar {
-  background-color: #ffffff;
-}
-
-li {
-  cursor: pointer;
-}
-
-.bakat-container {
+/* =========================================================
+   ====== DETAIL SIDEBAR ======
+   ========================================================= */
+.bakat-container,
+.bakat-container2 {
   position: relative;
   background: white;
   border-radius: 12px;
@@ -152,45 +196,9 @@ li {
   text-align: center;
 }
 
-.bakat-container ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
 
-.bakat-container li {
-  background: #f2f2f2;
-  margin: 8px 0;
-  padding: 10px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.bakat-container li:hover {
-  background: #d8e0ff;
-}
-
-.detail-sidebar {
-  position: absolute;
-  top: 0;
-  left: -20px; /* geser 20px ke kiri */
-  width: 100%;
-  height: 100%;
-  background-color: #ffffff;
-  border-radius: 12px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 5;
-  text-align: center;
-  padding: 20px;
-  animation: fadeIn 0.3s ease;
-}
-
-
-.detail-sidebar button {
+.detail-sidebar button,
+.detail-sidebar2 button {
   background-color: navy;
   color: white;
   border: none;
@@ -200,99 +208,123 @@ li {
   transition: 0.3s;
 }
 
-.detail-sidebar button:hover {
+.detail-sidebar button:hover,
+.detail-sidebar2 button:hover {
   background-color: royalblue;
 }
 
+/* ===== Animasi ===== */
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: scale(0.95);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
+  from { opacity: 0; transform: scale(0.95); }
+  to   { opacity: 1; transform: scale(1); }
 }
 
+.detail-sidebar,
+.detail-sidebar2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  animation: fadeIn 0.3s ease;
+  z-index: 5;
+}
 
-/* ===== DARK MODE ===== */
+/* =========================================================
+   ====== DARK MODE ======
+   ========================================================= */
 .dark-mode {
   background-color: #0a192f;
   color: #e6edf3;
   transition: background-color 0.4s ease, color 0.4s ease;
 }
 
+/* Header */
 .dark-mode .header {
   background-color: #112240;
   color: #64ffda;
   box-shadow: 0 4px 20px rgba(100, 255, 218, 0.2);
 }
 
+/* Container */
 .dark-mode .about,
 .dark-mode .projects,
 .dark-mode .projects_,
 .dark-mode .contact,
 .dark-mode .profil,
-.dark-mode .quote, 
+.dark-mode .quote,
 .dark-mode .projects1,
 .dark-mode .projects2,
-.dark-mode .projects3{
+.dark-mode .projects3,
+.dark-mode .projects4 {
   background-color: #1c2230;
   color: #e6edf3;
   box-shadow: 0 0 15px rgba(100, 255, 218, 0.15);
 }
 
-.dark-mode h1 { color: #64ffda; }
-.dark-mode h2 { color: #64ffda; }
+/* Teks */
+.dark-mode h1,
+.dark-mode h2,
 .dark-mode h3 { color: #64ffda; }
-.dark-mode h4 { color: #ffffff; }
+
+.dark-mode h4,
 .dark-mode p { color: #ffffff; }
-.dark-mode .jkt48-text { color: #ffffff; }
 
-
+/* List */
 .dark-mode ul li {
   background-color: #112240;
   color: #e6edf3;
   border: 1px solid #233554;
 }
+
 .dark-mode ul li:hover {
   background-color: #64ffda;
   color: #112240;
 }
+
+/* Sidebar */
+.dark-mode .sidebar,
+.dark-mode .sidebar2 {
+  background-color: #1c2230;
+}
+
+/* Tombol */
 .dark-mode .toggle-btn {
-  position: absolute;
-  top: 10px; /* jarak dari atas */
-  right: 10px; /* posisi di kanan */
-  background-color: #112240; /* warna tombol */
-  color: #ffffff;
-  border: 2px solid #112240;
-  border-radius: 8px;
-  padding: 8px 16px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.3s;
-  font-size: 28px;
+  background-color: #112240;
 }
 
-/* Foto tetap kotak di dark mode, optional border kontras */
-.dark-mode .jkt48 {
-  border-color: #64ffda;
+/* Bakat Container (Dark) */
+.dark-mode .bakat-container,
+.dark-mode .bakat-container2 {
+  background: #1c2230;
 }
 
-/* Profil di Dark Mode */
-.dark-mode .profil {
-  text-align: center;
+/* =========================================================
+   ====== KONTAK ======
+   ========================================================= */
+.Email,
+.Instagram,
+.Whatsapp {
+  text-align: left;
+  padding: 20px;
+  margin: 0;
+  line-height: 0;
 }
 
-.dark-mode .foto-profil {
-  border-color: #64ffda;  /* hanya di dark mode */
-}
-
-/* ===== RESPONSIVE UNTUK HP ===== */
+/* =========================================================
+   ====== RESPONSIVE (HP) ======
+   ========================================================= */
 @media (max-width: 768px) {
   .jkt48-container {
-    flex-direction: column; /* susun atas-bawah di HP */
+    flex-direction: column;
     align-items: center;
     width: 90%;
     padding: 15px;
@@ -304,44 +336,31 @@ li {
     margin: 0 0 15px 0;
   }
 
-  .jkt48-text {
-    text-align: justify;
-    font-size: 14px;
-    line-height: 1.6;
-    padding: 0 10px;
-  }
-
+  .jkt48-text,
   .hobisaya-text {
     text-align: justify;
     font-size: 14px;
     line-height: 1.6;
     padding: 0 10px;
   }
-} 
 
-.Email, .Instagram, .Whatsapp {
-  text-align: left;
-  padding: 20px;
-  margin: 0;
-  line-height: 0.0;
-} 
+  /* Sidebar Responsif */
+  .sidebar {
+    left: 10px;
+    width: 130px;
+  }
 
-.dark-mode .sidebar {
-  background-color: #1c2230;
+  .sidebar2 {
+    left: 150px;
+    width: 140px;
+  }
 }
 
-.dark-mode .bakat-container {
-  position: relative;
-  background: #1c2230;
-  border-radius: 12px;
-  padding: 20px;
-  text-align: center;
-}
-
-.dark-mode .detail-sidebar {
+.dark-mode .detail-sidebar,
+.dark-mode .detail-sidebar2 {
   position: absolute;
   top: 0;
-  left: -20px; /* geser 20px ke kiri */
+  left: 0;
   width: 100%;
   height: 100%;
   background-color: #1c2230;
@@ -350,11 +369,8 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 5;
   text-align: center;
   padding: 20px;
   animation: fadeIn 0.3s ease;
+  z-index: 5;
 }
-
-
-
