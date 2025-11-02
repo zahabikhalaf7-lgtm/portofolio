@@ -179,10 +179,14 @@ function App() {
         <h2>Hobi Saya</h2>
         <div className="hobisaya-text">
           <p>
-            Saya memiliki beberapa hobi yang menjadi bagian penting dari
-            keseharian saya. Saya suka membuat novel, karena melalui menulis
-            saya bisa menuangkan ide, imajinasi, dan perasaan ke dalam cerita
-            yang hidup.
+            Saya memiliki hobi menulis dan membaca novel. 
+            Melalui menulis, saya bisa menyalurkan imajinasi 
+            dan perasaan ke dalam cerita, sementara membaca 
+            membantu saya menemukan inspirasi dan memperkaya 
+            gaya penulisan saya. Selain itu, saya juga menyukai 
+            JKT48. Grup idola tersebut sering menjadi sumber 
+            semangat dan inspirasi bagi saya, baik dalam berkarya 
+            maupun menjalani aktivitas sehari-hari.
           </p>
         </div>
 
